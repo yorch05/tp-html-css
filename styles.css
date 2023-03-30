@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Tipografía */
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+/* Encabezado */
+header {
+	background-color: #4CAF50;
+	color: white;
+	padding: 1rem;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+nav li {
+	margin-left: 1.5rem;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ccc;
+}
+
+.banner {
+	background-image: url('https://www.nationalgeographic.com.es/medio/2022/04/23/libros_b2d310d5_1280x852.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-text {
+	text-align: center;
+	color: white;
+}
+
+/* Contenido principal */
+main {
+	margin: 2rem;
+}
+
+.lista-libros {
+	display: grid;
+}
+
+.libro {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.libro img {
+	max-width: 100%;
+	margin-bottom: 1rem;
+}
+
+.libro h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.libro p {
+	flex-grow: 1;
+	margin-bottom: 0.5rem;
+}
+
+.libro button {
+	padding: 0.5rem;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.libro button:hover {
+	background-color: #3E8E41;
+	cursor: pointer;
+}
+
+/* Sección formulario*/
+.formulario {
+    margin-top: 2em;
+    background-color: #c2ebc4;
+    padding: 1em
+}
+
+/* Formulario */
+form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+form label {
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+form input,
+form textarea {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	margin-bottom: 1rem;
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+	padding: 0.5rem;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+	background-color: #3E8E41;
+	cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+	background-color: #ccc;
+	color: #333;
+	padding: 1rem;
+	text-align: center;
+}
